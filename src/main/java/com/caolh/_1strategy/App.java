@@ -1,5 +1,7 @@
 package com.caolh._1strategy;
 
+import com.caolh._1strategy.impl.FlyWithWings;
+
 /**
  * Create with IntelliJ IDEA
  * User:曹立华
@@ -11,6 +13,8 @@ public class App {
     public static void main(String[] args) {
         Duck model = new ModelDuck();
         model.performFly();
-
+        //动态改变飞行行为
+        model.setFlyBehavior(new FlyWithWings());
+        model.performFly();
     }
 }
