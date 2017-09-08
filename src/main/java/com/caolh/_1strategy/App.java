@@ -12,7 +12,7 @@ import com.caolh._1strategy.impl.FlyWithWings;
  */
 public class App {
     public static void main(String[] args) {
-        //策略设计模式
+        //策略设计模式   。。。
         Duck model = new ModelDuck();
         model.performFly();
         //动态改变飞行行为
