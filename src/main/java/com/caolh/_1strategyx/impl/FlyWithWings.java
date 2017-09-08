@@ -1,7 +1,7 @@
-package com.caolh._1strategy.impl;
+package com.caolh._1strategyx.impl;
 
 
-import com.caolh._1strategy.FlyBehavior;
+import com.caolh._1strategyx.FlyBehavior;
 
 /**
  * Create with IntelliJ IDEA

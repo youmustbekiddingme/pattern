@@ -1,4 +1,4 @@
-package com.caolh._1strategy;
+package com.caolh._1strategyx;
 
 /**
  * Create with IntelliJ IDEA
