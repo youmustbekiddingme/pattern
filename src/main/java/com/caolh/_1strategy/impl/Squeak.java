@@ -1,6 +1,6 @@
-package com.caolh._1strategyx.impl;
+package com.caolh._1strategy.impl;
 
-import com.caolh._1strategyx.QuackBehavior;
+import com.caolh._1strategy.QuackBehavior;
 
 /**
  * Create with IntelliJ IDEA

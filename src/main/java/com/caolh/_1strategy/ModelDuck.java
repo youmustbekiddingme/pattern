@@ -1,8 +1,8 @@
-package com.caolh._1strategyx;
+package com.caolh._1strategy;
 
 
-import com.caolh._1strategyx.impl.FlyNoWay;
-import com.caolh._1strategyx.impl.Quack;
+import com.caolh._1strategy.impl.FlyNoWay;
+import com.caolh._1strategy.impl.Quack;
 
 /**
  * Create with IntelliJ IDEA

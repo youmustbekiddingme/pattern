@@ -1,6 +1,6 @@
-package com.caolh._1strategyx;
+package com.caolh._1strategy;
 
-import com.caolh._1strategyx.impl.FlyWithWings;
+import com.caolh._1strategy.impl.FlyWithWings;
 
 /**
  * Create with IntelliJ IDEA
