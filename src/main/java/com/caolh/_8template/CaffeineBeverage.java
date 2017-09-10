@@ -21,6 +21,7 @@ public abstract class CaffeineBeverage {
     /**
      * 烧水
      */
+    //定义为公开的类，其他包的类才以访问这个方法可
    public  void boilWater(){
         System.out.println("Boiling water");
     }
