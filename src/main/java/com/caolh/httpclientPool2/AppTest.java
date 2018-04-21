@@ -46,7 +46,7 @@ public class AppTest {
             ExecutorService executors = Executors.newFixedThreadPool(pagecount);
             CountDownLatch countDownLatch = new CountDownLatch(pagecount);
             for(int i = 0; i< pagecount;i++){
-                HttpGet httpget = new HttpGet(url_gaode);
+                HttpGet httpget = new HttpGet(url_gaode);//
                 config(httpget);
                //System.out.println(httpClient+"client2=======================================================");
                 //启动线程抓取
