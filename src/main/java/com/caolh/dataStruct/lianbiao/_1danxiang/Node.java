@@ -21,4 +21,5 @@ public class Node {
         this.name = name;
         this.score = score;
     }
+
 }

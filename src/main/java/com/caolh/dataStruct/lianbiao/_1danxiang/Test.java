@@ -10,8 +10,6 @@ import java.io.InputStreamReader;
  */
 public class Test {
     public static void main(String[] args) throws Exception{
-        BufferedReader buf;
-        buf=new BufferedReader(new InputStreamReader(System.in));
         int no;
         String name;
         int score;
@@ -19,16 +17,17 @@ public class Test {
         System.out.println("请输入5个学生信息");
         MyLinkedList myLinkedList = new MyLinkedList();
         for(int i=1;i<6;i++){
-            System.out.println("请输入学号");
-            no=Integer.parseInt(buf.readLine());
-            System.out.println("请输入名字");
-            name=buf.readLine();
-            System.out.println("请输入分数");
-            score=Integer.parseInt(buf.readLine());
+            no=i;
+            name="caolihua"+i;
+            score=i*10;
             myLinkedList.insert(no,name,score);
             System.out.println("--------------------------");
         }
         System.out.println("所有学生信息");
+        myLinkedList.print();;
+        //删除一个
+        System.out.println("删除一个node");
+        myLinkedList.delete(5);
         myLinkedList.print();;
 
     }
