@@ -17,12 +17,8 @@ public class MyLinkedList {
 
     /**
      * 新插入一个节点
-     * @param no
-     * @param name
-     * @param score
      */
-    public void insert(int no,String name,int score){
-        Node newNode=new Node(no,name,score);//每次新插入的节点的next 节点都是null
+    public void insert(Node newNode){
         if(this.isEmpty()){
             first=newNode;
             last=newNode;
@@ -74,4 +70,32 @@ public class MyLinkedList {
             current=current.next;
         }
     }
+
+    /**
+     * 链表的反转
+     * @param head
+     * @return
+     */
+    public void reverse(Node head){
+        if(head==null) return ;
+        Node pre=head;//前一个节点
+        Node cur=head.next;//当前节点
+        Node tmp;//下一个节点，临时存储
+
+        while(cur!=null){
+            tmp=cur.next;
+
+            cur.next=pre;
+
+            pre=cur;
+
+            cur=tmp;
+
+        }
+
+        head.next=null;//变为最后一个节点，所以next=null
+        first=pre; //第一个节点和最后一个节点互换了
+        last=head;
+    }
+
 }
